@@ -1,5 +1,5 @@
 {
-  "name": "myproduct",
+  "name": "sequelize",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^6.0.10",
-    "nodemon": "^2.0.13"
+    "mysql2": "^2.3.0",
+    "nodemon": "^2.0.13",
+    "sequelize": "^6.7.0"
   }
 }
