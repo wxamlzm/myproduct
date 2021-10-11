@@ -24,8 +24,9 @@ router.post('/add', async (req, res) => {
 router.get('/del', async (req, res) => {
     let pid = req.query.pid;
 
-    const del = Product.findOne({pid})
-
+    const del = await Product.findOne({where:{pid}})
+    del.destroy()
+    
     res.send(del)
 })
 
